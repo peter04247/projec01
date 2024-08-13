@@ -15,3 +15,5 @@ def load_data(nrows):
     data[DATE_COLUMN] = pd.to_datetime(data[DATE_COLUMN])
     return data
 
+st.subheader("Raw data")
+st.write(data)
