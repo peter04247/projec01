@@ -8,5 +8,6 @@ DATA_URL = pd.read_csv('sales_data.csv')
 
 
 st.write(DATA_URL)
-
+x = DATA_URL.groupby("Region")
+print(x)
 st.bar_chart(DATA_URL, x='Region', y='Sales')
